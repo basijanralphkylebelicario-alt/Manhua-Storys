@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manhua Stories</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="top">
+    <div class="brand">
+      <!-- LOGO: put your logo at images/logo.png -->
+      <div class="pic logo"><img src="images/logo.png" alt="Site logo" onerror="this.remove()"><span>LOGO</span></div>
+      <a class="name" href="index.html">Manhua Stories</a>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="#" id="rand">Surprise Me</a>
+    </nav>
+    <form action="browse.html" role="search">
+      <input type="search" name="q" id="search" placeholder="Search stories" aria-label="Search stories">
+    </form>
+    <button class="theme" id="themeBtn" type="button">Dark / Light</button>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured stories">
+      <div id="slides"></div>
+      <button class="arrow l" id="prev" type="button" aria-label="Previous story">‹</button>
+      <button class="arrow r" id="next" type="button" aria-label="Next story">›</button>
+    </section>
+
+    <div class="cols" style="margin-top:34px">
+      <section class="panel">
+        <h2 class="sec">Trending Stories</h2>
+        <div class="row" id="trending"></div>
+        <p style="margin:12px 0 0"><a class="btn" href="browse.html">All Stories</a></p>
+      </section>
+      <aside class="panel" aria-label="Popular stories">
+        <h2 class="sec">Popular</h2>
+        <ol id="popular"></ol>
+      </aside>
+    </div>
+
+    <section style="margin-top:34px">
+      <h2 class="sec">Browse by genre</h2>
+      <div class="chips" id="genres"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Manhua Stories · Student project · 50 original single-chapter stories</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

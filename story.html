@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manhua Stories</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="story">
+  <div id="bar" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand">
+      <!-- LOGO: put your logo at images/logo.png -->
+      <div class="pic logo"><img src="images/logo.png" alt="Site logo" onerror="this.remove()"><span>LOGO</span></div>
+      <a class="name" href="index.html">Manhua Stories</a>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="#" id="rand">Surprise Me</a>
+    </nav>
+    <form action="browse.html" role="search">
+      <input type="search" name="q" id="search" placeholder="Search stories" aria-label="Search stories">
+    </form>
+    <button class="theme" id="themeBtn" type="button">Dark / Light</button>
+  </header>
+
+  <main>
+    <article id="story"></article>
+  </main>
+
+  <footer>
+    <p>Manhua Stories · Student project · 50 original single-chapter stories</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
